@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+    color: black;
+    transition: all 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link:hover {
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+    min-height: 90vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+}
+
+td,
+th {
+    border: 1px solid;
+    padding: 20px;
+    color: rgb(255, 241, 213);
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+label {
+    color: white;
 }
